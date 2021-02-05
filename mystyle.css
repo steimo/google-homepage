@@ -16,7 +16,7 @@ h1 {
 
 .head-words {
 	color: #727272;
-	font-size: 13px;
+	font-size: 15px;
 	vertical-align: middle;
 	
 }
@@ -82,6 +82,7 @@ a, u {
 	margin: 0 auto;
 	max-width: 484px;
 	width: auto;
+	
 
 }
 
@@ -99,14 +100,16 @@ a, u {
 	    border: none;
 }
 
-input {
-	width: 482px;
+.search-field {
      border-radius: 20px;
-     border: 1px solid #2d9fd9;
+     border: 1px solid  #dfe1e5;
+	vertical-align: middle;
+
      outline: none;
      height: 38px;
      padding-left: 40px;
      padding-right: 40px;
+     width: 484px;
 }
 
 .search-field:hover {
@@ -119,7 +122,44 @@ input {
     left:10px;
     width:20px;
     height:20px;
-    color: #9aa0a6;
+
+}
+
+@media only screen and (min-width: 150px) and (max-width: 484px) {	
+	.search-field
+ 			{
+		width: 95%;
+	margin: 0 auto;
+}
+
+}
+
+.search-buttons {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.sL-buttons {
+	background-color: #f8f9fa;
+	border: 1px solid #f8f9fa;
+	border-radius: 4px;
+	color: #3c4043;
+	font-family: arial, sans-serif;
+	font-size: 14px; 
+	margin: 11px 6px;
+	padding: 0 16px;
+	line-height: 27px;
+	height: 36px;
+	text-align: center;
+}
+
+.sL-buttons:hover {
+	box-shadow: 0 1px 1px rgba(0,0,0, .1);
+	background-color: #f8f9fa;
+	border: 1px solid #dadce0;
+	color: #202124;
+	cursor: pointer;
 
 }
 
